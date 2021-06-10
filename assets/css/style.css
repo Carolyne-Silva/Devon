@@ -1,0 +1,246 @@
+@font-face {
+	font-family: nexa-bold;
+	src: url(../../fonts/nexa-bold.otf);
+}
+
+@font-face {
+	font-family: minbus;
+	src: url(../../fonts/minbus.otf);
+}
+
+@font-face {
+	font-family: nexa-light;
+	src: url(../../fonts/nexa-light.otf);
+}
+
+@font-face {
+	font-family: vermin;
+	src: url(../../fonts/vermin.otf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(../images/background.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.pagina {
+	width: 100%;
+	height: 100%;
+	margin: 0px auto;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: 40% auto;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"social social social"
+	"header header header"
+	"sidebar content content"
+	"footer footer footer";
+}
+
+.socialarea {
+	grid-area: social;
+	background-color: black;
+	display: inline-flex;
+	font-size: 15px;
+	padding: 5px;
+	color: white;
+	font-family: nexa-light;
+}
+
+.socialarea label{
+	margin-top: 5px;
+	margin-left: 50px;
+}
+
+.item-01 {
+	grid-area: header;
+	background-color: orange;
+	padding: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	-webkit-box-shadow: 0px 3px 12px -4px rgba(0,0,0,0.67);
+	-moz-box-shadow: 0px 3px 12px -4px rgba(0,0,0,0.67);
+	box-shadow: 0px 3px 12px -4px rgba(0,0,0,0.67);
+	margin-bottom: 25px;
+}
+
+.item-01 img {
+	width: 250px;
+	float: left;
+	position: relative;
+}
+
+.item-02 {
+	grid-area: sidebar;
+	background-color: white;
+	padding: 50px;
+	text-align: left;
+	font-family: nexa-bold;
+}
+
+.item-02 p{
+	text-align: justify;
+	font-size: 1.2rem;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.item-03 {
+	grid-area: content;
+	background-color: white;
+	padding: 50px;
+	padding-left: 10px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 5px;
+	grid-row-gap: 5px;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"civil adm tributario"
+	"municipal penal ambiental"
+}
+
+.item-04 {
+	grid-area: footer;
+	background-color: lightgray;
+	padding: 20px;
+	margin-top: 25px;
+	padding-left: 40px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+
+
+/* ----------------- Divisão do Item 03 ------------------*/
+
+.item-civil {
+	grid-area: civil;
+	background-color: black;
+	z-index: 13;
+}
+
+.item-adm {
+	grid-area: adm;
+	background-color: black;
+	z-index: 13;
+}
+
+.item-tributario {
+	grid-area: tributario;
+	background-color: black;
+	z-index: 13;
+}
+
+.item-municipal {
+	grid-area: municipal;
+	background-color: orange;
+	z-index: 13;
+}
+
+.item-penal {
+	grid-area: penal;
+	background-color: orange;
+}
+
+.item-ambiental {
+	grid-area: ambiental;
+	background-color: orange;
+}
+
+/* ----------------- Divisão do Item 03 ------------------*/
+
+.bg-down {
+	background-color: white;
+	height: 100vw;
+	position: relative;
+	padding: 50px;
+}
+
+.bg-svg {
+	fill: orange;
+	width: 100%;
+}
+
+.divisoriasvg {
+	transform: rotate(180deg);
+}
+
+/* Menu */
+
+.contentmenu {
+	list-style: none;
+	display: inline-flex;
+	float: right;
+	padding: 15px;
+	margin: 20px;
+	background-color: white;
+	border-radius:100px;
+	-moz-border-radius:100px;
+	-webkit-border-radius:100px;
+}
+
+.contentmenu li{
+	margin-left: 10px;
+	margin-right: 2px;
+}
+
+.contentmenu h3{
+	color: black;
+	margin: auto;
+	font-family: nexa-bold;
+	font-size: 1.3rem;
+	text-decoration: none;
+}
+
+.contentmenu a:hover {
+	list-style: none;
+	text-decoration: none;
+	border: none;
+}
+
+.contentmenu h3:hover {
+	color: orange;
+	transition: all 0.5s;
+}
+
+.custom-shape-divider-bottom-1602790222 {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: -2px;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1602790222 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 49px;
+}
+
+.custom-shape-divider-bottom-1602790222 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* Funcionamento ######### */
+.funcionamento {
+	padding: 10px;
+	color: black;
+}
+
+.funcionamento img {
+	float: right !important;
+	position: relative;
+}
